@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "More Shortcuts",
+  "version": "1.0.0",
+  "description": "Adds powerful keyboard shortcuts to Chrome that don't exist by default.",
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "storage",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "commands": {
+    "collapse-group-pause-media": {
+      "suggested_key": {
+        "mac": "Command+Shift+H",
+        "windows": "Ctrl+Shift+H",
+        "linux": "Ctrl+Shift+H"
+      },
+      "description": "Collapse active tab group and pause media"
+    },
+    "new-tab-in-group": {
+      "suggested_key": {
+        "mac": "Command+Shift+G",
+        "windows": "Ctrl+Shift+G",
+        "linux": "Ctrl+Shift+G"
+      },
+      "description": "Open new tab in its own new group"
+    },
+    "random-site": {
+      "suggested_key": {
+        "mac": "Command+Shift+Y",
+        "windows": "Ctrl+Shift+Y",
+        "linux": "Ctrl+Shift+Y"
+      },
+      "description": "Open a random site from your list (override in chrome://extensions/shortcuts)"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

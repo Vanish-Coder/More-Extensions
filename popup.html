@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>More Shortcuts</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo">
+        <span class="logo-icon">⌨</span>
+        <span class="logo-text">More Shortcuts</span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Shortcut 1 -->
+      <div class="shortcut-card" data-key="collapse-group-pause-media">
+        <div class="shortcut-info">
+          <div class="shortcut-top">
+            <span class="shortcut-name">Collapse Group &amp; Pause Media</span>
+            <label class="toggle">
+              <input type="checkbox" data-shortcut="collapse-group-pause-media" />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <p class="shortcut-desc">Collapses the active tab's group and pauses any playing audio or video. (Recommended shortcut listed below, but you can choose your own.)</p>
+          <div class="shortcut-keys">
+            <kbd>⌘</kbd><kbd>⇧</kbd><kbd>H</kbd>
+            <span class="keys-win">/ <kbd>Ctrl</kbd><kbd>⇧</kbd><kbd>H</kbd> on Windows</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shortcut 2 -->
+      <div class="shortcut-card" data-key="new-tab-in-group">
+        <div class="shortcut-info">
+          <div class="shortcut-top">
+            <span class="shortcut-name">New Tab in New Group</span>
+            <label class="toggle">
+              <input type="checkbox" data-shortcut="new-tab-in-group" />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <p class="shortcut-desc">Opens a new tab and immediately places it into its own fresh tab group. (Recommended shortcut listed below, but you can choose your own.)</p>
+          <div class="shortcut-keys">
+            <kbd>⌘</kbd><kbd>⇧</kbd><kbd>G</kbd>
+            <span class="keys-win">/ <kbd>Ctrl</kbd><kbd>⇧</kbd><kbd>G</kbd> on Windows</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shortcut 3 -->
+      <div class="shortcut-card" data-key="random-site">
+        <div class="shortcut-info">
+          <div class="shortcut-top">
+            <span class="shortcut-name">Random Site Launcher</span>
+            <label class="toggle">
+              <input type="checkbox" data-shortcut="random-site" />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <p class="shortcut-desc">Opens a random site from your list below. Every press is a surprise. (Recommended shortcut listed below, but you can choose your own.)</p>
+          <div class="shortcut-keys">
+            <kbd>⌘</kbd><kbd>⇧</kbd><kbd>Y</kbd>
+            <span class="keys-win">/ <kbd>Ctrl</kbd><kbd>⇧</kbd><kbd>Y</kbd> on Windows</span>
+          </div>
+        </div>
+
+        <!-- Sites list (only shown when this shortcut is enabled) -->
+        <div class="sites-panel" id="sites-panel">
+          <div class="sites-list" id="sites-list"></div>
+          <div class="add-site-row">
+            <input type="text" id="new-site-input" placeholder="https://example.com" />
+            <button id="add-site-btn">Add</button>
+          </div>
+          <div class="cmd-shift-t-note">
+            <span class="note-icon">💡</span>
+            <span>Want <kbd>⌘⇧T</kbd> instead? Set it at <a href="#" id="open-shortcuts-page">chrome://extensions/shortcuts</a>. You also need to do this for the other commands as well.</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
