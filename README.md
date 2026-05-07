@@ -33,4 +33,4 @@ Click the extension icon to open the popup. From there you can:
 Please give suggestions for new shortcuts [here](https://github.com/Vanish-Coder/More-Extensions/issues). 
 
 ## License
-This software is licensed under [GNU GPL-v3](https://en.wikipedia.org/wiki/GNU_General_Public_License#Version_3).
+This software is licensed under [GNU GPL-3.0](https://en.wikipedia.org/wiki/GNU_General_Public_License#Version_3).
