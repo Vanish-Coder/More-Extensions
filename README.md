@@ -25,7 +25,9 @@ Click the extension icon to open the popup. From there you can:
 - Manage the list of sites for the Random Site Launcher (add/remove URLs).
 
 ## Notes
-
 - The **Collapse Group** shortcut only works if the active tab belongs to a tab group. If it doesn't, only media pausing runs.
 - The **New Tab in Group** shortcut creates a new group for every new tab — rename/recolor the group in Chrome's tab bar as usual.
 - Sites added to the Random Site Launcher are synced across your Chrome profile via chrome.storage.sync.
+
+## Suggestions
+Please give suggestions for new shortcuts [here](https://github.com/Vanish-Coder/More-Extensions/issues). 
