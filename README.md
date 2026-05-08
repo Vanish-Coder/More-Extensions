@@ -1,7 +1,7 @@
 # More Shortcuts
 A Chrome extension that adds keyboard shortcuts Chrome doesn't have by default.
 
-# Appearance
+## Appearance
 <img width="371" height="600" alt="Screenshot 2026-05-06 at 10 45 33 PM" src="https://github.com/user-attachments/assets/9d7d70c0-80c5-44ab-b7d0-9fb29a955bf5" />
 
 
