@@ -15,7 +15,7 @@ Mac Sh.   Windows Sh.      ‎ ‎ ‎ ‎ Description
 | `⌘⇧Y` | `Ctrl+Shift+Y` | Open a random site from your custom list.|
 
 
-### How to set up the shortcuts?
+### Do I need to set up the shortcuts?
 
 Chrome reserves some shortcuts at the OS level, so extensions can't claim it automatically. Also, you have to set all shortcuts manually as of now.
 
