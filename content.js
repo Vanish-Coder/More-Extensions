@@ -34,18 +34,21 @@
       if (!el.paused) el.pause();
     });
 
-    // 3. Click any visible pause button
-    const pauseSelectors = [
-      '[aria-label*="Pause" i]',
-      '[title*="Pause" i]',
-      '[data-testid*="pause" i]',
-      '.ytp-play-button[aria-label*="Pause" i]',
-      'button.pause',
-      'button[class*="pause" i]',
-    ];
-    for (const sel of pauseSelectors) {
-      const btn = document.querySelector(sel);
-      if (btn) { btn.click(); break; }
+    // 3. Click a pause button only if media is actually playing
+    const isAnythingPlaying = [...document.querySelectorAll("video, audio")].some(el => !el.paused);
+    if (isAnythingPlaying) {
+      const pauseSelectors = [
+        '[aria-label*="Pause" i]',
+        '[title*="Pause" i]',
+        '[data-testid*="pause" i]',
+        '.ytp-play-button[aria-label*="Pause" i]',
+        'button.pause',
+        'button[class*="pause" i]',
+      ];
+      for (const sel of pauseSelectors) {
+        const btn = document.querySelector(sel);
+        if (btn) { btn.click(); break; }
+      }
     }
   });
 })();

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "More Shortcuts",
-  "version": "1.2.0",
+  "version": "1.2.5",
   "description": "Adds powerful keyboard shortcuts to Chrome that don't exist by default.",
   "permissions": [
     "tabs",
